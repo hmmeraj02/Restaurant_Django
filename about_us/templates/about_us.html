@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="container">
+  <div class="position-relative">
+    <img src="{% static "restaurant.jpg" %}" alt="..." class="img-fluid"
+    style="width:100%; height:800px">
+    <div
+      class="position-absolute top-50 start-50 translate-middle text-white align-center"
+    >
+      <h1 class="text-info fs-1 fst-italic">Welcome to Meraj's</h1>
+      <p class="text-info fs-2">
+        Experience Culinary Delights Like Never Before
+      </p>
+      <p class="text-white fs-4">
+        Meraj's is a place where passion for food meets the art of cooking. Our
+        chefs craft each dish with precision and creativity, ensuring a culinary
+        experience that delights the senses. From fresh, locally-sourced
+        ingredients to expertly curated menus, we strive to provide a dining
+        experience that goes beyond expectations.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

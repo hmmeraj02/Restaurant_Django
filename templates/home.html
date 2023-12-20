@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="container text-center bg-info-subtle">
+  <div class="row">
+    <div class="col-4">
+        <h1 class="text-dark fs-1 fst-italic">Welcome to Meraj's</h1>
+        <p class="text-dark fs-2">
+          Experience Culinary Delights Like Never Before
+        </p>
+        <p class="text-dark fs-4">
+          Meraj's is a place where passion for food meets the art of cooking. Our
+          chefs craft each dish with precision and creativity, ensuring a culinary
+          experience that delights the senses. From fresh, locally-sourced
+          ingredients to expertly curated menus, we strive to provide a dining
+          experience that goes beyond expectations.
+        </p>
+        <button type="button" class="btn btn-primary"><a class="text-dark text-decoration-none" href="{% url "meal_list" %}">Explore Items</a></button>
+        <button type="button" class="btn btn-info"><a class="text-dark text-decoration-none" href="{% url "about_us" %}">About Us</a></button>
+    </div>
+    <div class="col-8">
+      <img class="img-fluid" style="width:100%; height:800px" src="{% static "restaurant.jpg" %}" alt="">
+    </div>
+  </div>
+</div>
+{% endblock %}
